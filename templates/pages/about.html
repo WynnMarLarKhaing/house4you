@@ -31,12 +31,11 @@
     <div class="container">
         <div class="row">
         <div class="col-md-8">
-            <h2>We Search For The Perfect Home</h2>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
-            <img src="{% static 'img/about.jpg' %}" alt="">
-            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet
-            neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat
-            commodi id libero eveniet harum perferendis laborum molestias quia.</p>
+            <h2>We Search For The Perfect Home</h2>            
+            <img src="{% static 'img/about-1.jpg' %}" alt="">
+            <p class="mt-4">House4you’s January 2019 Property Outlook report reveals conditions remain highly variable across the country, with most capital cities either stabilising or recording moderate growth for the year and December quarter.</p>
+            <img src="{% static 'img/about-2.jpg' %}" alt="">
+            <p class="mt-4">House Price Index is showing that declines are far less severe than what many other commentators are saying. There is no doubt we are seeing price declines in Melbourne and Sydney, but they are not as pronounced as first thought; and we are certainly not seeing the worst conditions in 30 years.</p>
         </div>
         <div class="col-md-4">
             {% if mvp_realtors %}
@@ -63,7 +62,7 @@
     <h2 class="display-4">We Work For You</h2>
     <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
     <hr>
-    <a href="listings.html" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+    <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
     </section>
     
     <!-- Team -->
